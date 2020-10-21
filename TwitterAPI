@@ -4,22 +4,18 @@ import pip
 pip.main(['install','tweepy'])
 
 
-# Import the required libraries.
 import tweepy
 import pandas as pd
 import matplotlib.pyplot as plt
 
 
-# Make the graphs prettier
 pd.set_option('display.mpl_style', 'default')
 
 
 consumerKey = 'YOUR CONSUMER KEY'
 consumerSecret = 'CONSUMER SECRET
 
-#Use tweepy.OAuthHandler to create an authentication using the given key and secret
 auth = tweepy.OAuthHandler(consumer_key=consumerKey, 
  consumer_secret=consumerSecret)
 
-#Connect to the Twitter API using the authentication
 api = tweepy.API(auth)
